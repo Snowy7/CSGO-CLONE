@@ -87,8 +87,13 @@ namespace Snowy.Utils
         
         public void Hide()
         {
-            loadingPanel.SetActive(false);
             FadeOut();
+            Invoke(nameof(DisablePanel), fadeDuration);
+        }
+        
+        private void DisablePanel()
+        {
+            loadingPanel.SetActive(false);
         }
 
         async public void LoadSceneAsync(string sceneName, int delay = 5000)

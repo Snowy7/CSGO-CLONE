@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace UI
+namespace Snowy.UI
 {
     public class MainMenu : MonoBehaviour
     {
